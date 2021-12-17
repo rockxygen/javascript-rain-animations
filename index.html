@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Rain Animation with JavaScript</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="rainy"></div>
+        <script src="rain.js"></script>
+        <script>
+            new Rainy('.rainy', {
+                amount: 250,
+                duration: 5,
+                delay: -10,
+                colors: ["#fff", "#98dcf3", "#0c31d8", "#24aed1"]
+            }).rain();
+        </script>
+    </body>
+</html>
